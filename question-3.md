@@ -87,10 +87,12 @@ The Root Mean Squared Error(RMSE) of model is ::  2.3410902680961567
 ```
 
 ```python
+test_indices = np.arange(len(y_train), len(y_train) + len(y_test))
 
 plt.figure(figsize=(12, 8))
-plt.plot(y_test.values, label = 'True temperature', color = 'orange')
-plt.plot(predictions, label = 'Predicted temperature', color = 'green')
+plt.plot(y_train.values, label = 'Train', color = 'blue')
+plt.plot(test_indices, y_test.values, label = 'Test', color = 'orange')
+plt.plot(test_indices, predictions, label = 'Predicted', color = 'green')
 plt.title('AutoRegression for Temperature prediction')
 plt.xlabel('Date')
 plt.ylabel('Temperature')
