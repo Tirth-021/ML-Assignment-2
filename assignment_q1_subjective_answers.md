@@ -1,3 +1,5 @@
+Workflow in Question1, main.py -> dataset.py -> gradient_descent.py -> visualization.py
+
 ## **Question is asking to consider that model is converged when $|\theta_t - \theta^*| < \varepsilon$.**
 
 ## **Q. Determine the average number of steps required to satisfy this convergence criterion**
@@ -60,4 +62,5 @@ Stochastic GD(Momentum) converged in 23302.0 ± 528.8 updates on average
 <p align="center">
   <img src="sample_images/d2_5.png" />
   <img src="sample_images/d2_6.png" />
+
 </p>
